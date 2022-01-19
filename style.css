@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 html{
-background-color: aqua;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Mochiy Pop P One', sans-serif;
+color: azure;
+font-size: small;
+min-height: 100vh;
+box-sizing: border-box;
+}
+body{
+    background-color: rgb(169, 223, 223);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 400px auto;
+}
+.container{
+    place-self: center;
+    grid-column: 2 / 3;
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+  }
+.header{
+    text-align: center;
+    color: rgb(32, 30, 32);
+    font-size: smaller;
 }
 
-#description {
-    font-style: bold;
-}
