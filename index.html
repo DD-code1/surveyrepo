@@ -7,49 +7,103 @@
   </head>
 
   <body>
-    <div>
-      <h1 id="title">Microverse Entry Form</h1>
-      <p id="description" style="">Fill-in form details</p>
-      <form action="" id="survey-form">
-        <label id="name-label">NAME:
-          <input type="text" placeholder="enter your full name" id="name">
-        </label></form></br>
-        <label id="number-label">PHONE NUMBER:
-          <input type="number" placeholder="enter your number" id="number" min="1" max="14" required>
-        </label>
-        </br>
-        <label id="email-label">EMAIL:
-          <input type="text" placeholder="enter your email" id="email" required>
-        </label>
-        </br>
-        <label>Select your path:
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Microverse Entry Form</h1>
+        <p id="description">Fill in details</p>
+      </div>
+      <form id="survey-form">
+        <div class="form-item">
+          <label for="name" id="name-label">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            placeholder="Enter Name" 
+            required
+          />
+        </div>
+        <br>
+        <div class="form-item">
+          <label for="email" id="email-label">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="@gmail.com" 
+            required
+          />
+        </div>
+        <br>
+        <div class="form-item">
+          <label for="number" id="number-label">Number Of Positions</label>
+          <input 
+            type="number" 
+            name="number" 
+            id="number" 
+            placeholder="0" 
+            min="1" 
+            max="2" 
+            required
+          />
+        </div>
+        <br>
+        <div class="form-item">
+          <label for="dropdown" id="division">Select Skill-set</label>
           <select id="dropdown">
-            <option disabled selected value>Select an option</option>
-            <option value="fe">Front-end </option>
-            <option value="be">Back-end </option>
-           </select>
-        </label> </br>
-        <label >Choose the best options for you.</br>
-          <input type="radio" name="Part-time"  >Part-time
-          <input type="radio" name="Full-time"> Full-time
-        </label></br>
-        <label> 
-            <input type="checkbox" value="online"> Online
-            <input type="checkbox" value="premise"> On premise
-        </label>
-           
-        </label>
-      </br>
-        <label> What are your additional comments? </br>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
-        </label>
-      </br>
-      <button type="submit">Submit</button>
+            <option value="fe">Front-End</option>
+            <option value="be">Back-End</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <p><b>Time Zone</b></p>
+          <label>
+            <input 
+              type="radio" 
+              name="hour" 
+              value="Morning"
+            />America: 8am-10am UTC-6</label><br>
+          <label>
+            <input 
+            type="radio" 
+            name="hour" 
+            value="Morning"
+            />Africa/Europe : 8am-10am UTC=1</label>
+        </div>
+        <div class="form-item">
+          <p><b>Mode</b></p>
+          <label for="checkbox">
+            <input 
+              type="checkbox" 
+              name="mode" 
+              class="checkbox" 
+              value="online"
+            />Online</label>
+          <br>
+          <label for="checkbox">
+            <input 
+              type="checkbox" 
+              name="mode" 
+              class="checkbox" 
+              value="office"
+            />Office</label>
+        </div>
+        <div class="form-item">
+          <p>Any Personal Comment?</p>
+          <textarea 
+          name="comment" 
+          id="textarea" 
+          ></textarea>
+        </div>
+        <br>
+        <div class="form-item">
+          <input 
+          type="submit" 
+          id="submit" 
+          value="Submit"
+          />
+        </div>
       </form>
     </div>
-    
-    
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
